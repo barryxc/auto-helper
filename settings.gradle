@@ -1,0 +1,4 @@
+include ':app'
+rootProject.name = "AutoHelper"
+include ':automator'
+include ':common'

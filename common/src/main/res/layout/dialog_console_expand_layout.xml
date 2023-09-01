@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:maxHeight="300dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:text="运行日志"
+            android:textColor="@color/white" />
+
+
+        <ImageView
+            android:id="@+id/clear"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_clear"
+            android:textColor="@color/white" />
+
+
+        <ImageView
+            android:id="@+id/zoom"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_zoom_in"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+
+    <com.auto.helper.one.common.ui.view.MaxListView
+        android:id="@+id/logView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
